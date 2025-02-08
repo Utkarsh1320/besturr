@@ -39,7 +39,6 @@ const Navbar = () => {
                 collapsed={collapsed}
                 style={{ height: "100vh", backgroundColor: "#262626", display: "flex", flexDirection: "column" }}
             >
-                {/* User Profile Section */}
                 <div style={{ padding: "16px", textAlign: "center", color: "white", flexShrink: 0 }}>
                     <Dropdown overlay={userMenu} trigger={["click"]} placement="bottom">
                         <div style={{ cursor: "pointer" }}>
@@ -49,7 +48,6 @@ const Navbar = () => {
                     </Dropdown>
                 </div>
 
-                {/* Menu Items */}
                 <Menu
                     mode="inline"
                     items={menuItems}
@@ -61,4 +59,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-    
