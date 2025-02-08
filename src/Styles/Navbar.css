@@ -1,0 +1,10 @@
+.ant-menu-item{
+    color: white !important;
+}
+.ant-menu-item:hover {
+    background-color: #444 !important; /* Darker background on hover */
+    color: #ffd700 !important; /* Gold text on hover */
+  }.ant-menu-item-selected {
+    background-color: #333 !important; /* Darker selected item */
+    color: #ffd700 !important; /* Gold text for selected item */
+  }
