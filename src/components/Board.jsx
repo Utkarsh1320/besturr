@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { Layout, Row, Col, Typography, Avatar, Tooltip } from 'antd';
 import { Content } from 'antd/es/layout/layout';
-import FeatureContainer from './FeatureContainer';
+import FeaturesContainer from './FeaturesContainer';
 
 const { Header } = Layout;
 const { Title } = Typography;
@@ -53,7 +53,7 @@ const Board = () => {
                     </Col>
                 </Row>
             </Header>
-            <Content><FeatureContainer /></Content>
+            <Content><FeaturesContainer /></Content>
         </Layout>
     );
 };
