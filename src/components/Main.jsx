@@ -1,12 +1,14 @@
+/* eslint-disable no-unused-vars */
 import { Avatar, Layout, Menu, Dropdown, Typography } from "antd";
 import { useState } from "react";
 import { HomeOutlined, UserOutlined, LogoutOutlined, SwapOutlined } from "@ant-design/icons";
 import "../Styles/Navbar.css";
+import Board from "./Board";
 
-const { Sider } = Layout;
+const { Sider, Content } = Layout;
 const { Text } = Typography;
 
-const Navbar = () => {
+const Main = () => {
     const [collapsed, setCollapsed] = useState(false);
 
     const handleSignOut = () => {
@@ -54,8 +56,14 @@ const Navbar = () => {
                     style={{ flexGrow: 1, backgroundColor: "#262626", color: "white", border: "none" }}
                 />
             </Sider>
+
+            <Layout style={{ flexGrow: 1 }}>
+                <Content style={{ background: '#fff' }}>
+                    <Board />
+                </Content>
+            </Layout>
         </Layout>
     );
 };
 
-export default Navbar;
+export default Main;
