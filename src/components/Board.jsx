@@ -52,6 +52,7 @@ const Board = () => {
                         </Row>
                     </Col>
                 </Row>
+                <div></div>
             </Header>
             <Content><FeaturesContainer /></Content>
         </Layout>
