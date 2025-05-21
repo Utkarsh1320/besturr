@@ -16,7 +16,7 @@ phases:
   post_build:
     commands:
       - echo "Making deploy script executable"
-      - chmod +x scripts/deploy.sh
+      - sudo chmod +x scripts/deploy.sh
       - echo "Build completed"
 
 artifacts:
