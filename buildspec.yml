@@ -3,19 +3,25 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 22
+      nodejs: 18
     commands:
+      - echo "Installing dependencies"
       - npm install
 
   build:
     commands:
+      - echo "Building the React app"
       - npm run build
 
   post_build:
     commands:
+      - echo "Making deploy script executable"
+      - chmod +x scripts/deploy.sh
       - echo "Build completed"
-      - zip -r react-app.zip dist
 
 artifacts:
   files:
-    - react-app.zip
+    - appspec.yml
+    - scripts/**/*
+    - dist/**/*
+  discard-paths: no
