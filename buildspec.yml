@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 22
+    commands:
+      - npm install
+
+  build:
+    commands:
+      - npm run build
+
+  post_build:
+    commands:
+      - echo "Build completed"
+      - zip -r react-app.zip dist
+
+artifacts:
+  files:
+    - react-app.zip
