@@ -16,12 +16,12 @@ phases:
   post_build:
     commands:
       - echo "Making deploy script executable"
-      - sudo chmod +x scripts/deploy.sh
+      - sudo chmod +x spricts/deploy.sh
       - echo "Build completed"
 
 artifacts:
   files:
     - appspec.yml
-    - scripts/**/*
+    - spricts/**/*
     - dist/**/*
   discard-paths: no
