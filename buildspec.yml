@@ -21,5 +21,10 @@ artifacts:
     - appspec.yml
     - package.json
     - package-lock.json
+    - index.html # <-- ADD THIS
+    - vite.config.* # <-- ADD if using vite.config.js/ts
+    - public/**/* # <-- ADD if using a /public folder
     - scripts/*
     - dist/**/*
+
+  discard-paths: no
