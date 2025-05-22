@@ -15,11 +15,9 @@ phases:
     commands:
       - echo "Build completed"
       - chmod +x scripts/*.sh
-      - mkdir -p bundle
-      - cp -r dist scripts appspec.yml bundle/
-      - cd bundle
-      - zip -r ../react-app.zip .
 
 artifacts:
   files:
-    - react-app.zip
+    - appspec.yml
+    - scripts/*
+    - dist/**/*
