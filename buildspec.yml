@@ -19,5 +19,7 @@ phases:
 artifacts:
   files:
     - appspec.yml
+    - package.json
+    - package-lock.json
     - scripts/*
     - dist/**/*
