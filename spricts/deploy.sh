@@ -1,7 +1,7 @@
 #!/bin/bash
 
 APP_DIR="/var/www/myapp"
-BUILD_DIR="/home/ec2-user/react-deploy-temp/dist"
+BUILD_DIR="$(pwd)/dist" 
 
 echo "Deploying application..."
 
