@@ -1,5 +1,11 @@
 #!/bin/bash
 
+
+whoami
+pwd
+ls -ld /home/ec2-user/app
+ls -ld /home/ec2-user/app/node_modules
+
 # Load NVM
 export NVM_DIR="/home/ec2-user/.nvm"
 source "$NVM_DIR/nvm.sh"
