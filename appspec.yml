@@ -2,10 +2,14 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ec2-user/react-deploy-temp
+    destination: /home/ec2-user/app
 
 hooks:
   AfterInstall:
-    - location: scripts/deploy.sh
-      timeout: 180
+    - location: scripts/install_dependencies.sh
+      timeout: 300
+      runas: ec2-user
+  ApplicationStart:
+    - location: scripts/start_server.sh
+      timeout: 300
       runas: ec2-user
