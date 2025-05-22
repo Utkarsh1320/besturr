@@ -20,6 +20,6 @@ artifacts:
   files:
     - appspec.yml
     - package.json
-    - package-lock.json
+    - src/**/*         
     - scripts/*
     - dist/**/*
