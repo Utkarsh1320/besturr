@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 APP_DIR="/var/www/myapp"
 BUILD_DIR="$(pwd)/dist" 
